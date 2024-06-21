@@ -1,0 +1,51 @@
+@tailwind base;
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 0px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border: 0px;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .input{
+        @apply mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm;
+    }
+
+    .large-input{
+        @apply mt-1 w-full border-none p-0 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm;
+    }
+
+    .form-label{
+        @apply block overflow-hidden rounded-md border border-gray-200 px-3 py-2 shadow-sm;
+    }
+
+    .form-subtitle{
+        @apply font-medium text-gray-700;
+    }
+
+    .tag{
+        @apply text-xs inline-flex items-center font-bold px-3 py-1 rounded-full;
+    }
+
+    .tooltip{
+      @apply group-hover:opacity-100 transition-opacity z-50 bg-gray-200 p-1 text-sm text-gray-800 rounded-md absolute left-1/2 -translate-x-1/2 -translate-y-7 opacity-0 mx-auto;
+    }
+}
