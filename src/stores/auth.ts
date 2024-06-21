@@ -24,7 +24,7 @@ export const useAuthStore = defineStore({
   actions: {
     async login(user: DIEmailStrategy) {
       try {
-        const response = await http.post<{ token: string }>('/api/auth/login', user)
+        const response = await http.post<{ token: string }>('/auth/login', user)
         const token = response.data.token
         localStorage.setItem('accessToken', token)
         this.authenticated = true
