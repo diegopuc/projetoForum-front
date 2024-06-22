@@ -86,7 +86,7 @@ const handleSubmit =
       const user: DIEmailStrategy = { email: email.value, password: password.value };
       await authStore.login(user);
       router.push('/');
-      // console.log('pushed');
+       //console.log('pushed');
       LoginForm.onSuccess?.();
     } catch (e: any) {
       // console.log(e, 'not allowed')
