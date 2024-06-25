@@ -1,7 +1,7 @@
 import axios, { type AxiosInstance } from 'axios';
 
  //const baseURL = 'http://localhost:3000/api';
-const baseURL = 'projetoforum-back.onrender.com/api';
+const baseURL = 'http://projetoforum-back.onrender.com/api';
 
 //+
 
