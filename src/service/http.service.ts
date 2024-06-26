@@ -1,7 +1,7 @@
 import axios, { type AxiosInstance } from 'axios';
 
  //const baseURL = 'http://localhost:3000/api';
-const baseURL = 'https://38.242.137.190:3000/api';
+const baseURL = 'http://localhost:3000/api';
 
 //+
 
