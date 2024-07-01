@@ -10,7 +10,8 @@ import { useClipboard } from '@vueuse/core'
 const props = defineProps<{
   process: IProcess
 }>()
-const baseUrl = 'https://utip.vercel.app/client/trial'
+
+const baseUrl = 'https://utip.pucpcaldas.br/client/trial'
 const generatedUrl = computed(() => `${baseUrl}?id=${props.process._id}`);
 const tagColors = ref<string>()
 const process = computed(() => props.process);
